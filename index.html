@@ -1,0 +1,156 @@
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Le grand raid
+    </title>
+    <link href="images/logo.png" rel="icon">
+    <!-- CSS -->       
+    <link rel="stylesheet" href="asset\bootstrap-4.6.0-dist\bootstrap-4.6.0-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="asset\leaflet\leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="asset\Leaflet.markercluster-0.2\dist\MarkerCluster.css" />
+
+    <link rel="stylesheet" href="asset\css\styles.css"/>
+  </head>
+
+  <body>
+    <header class="header sticky" id="header-page-accueil">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg fixed-top-navbar navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="logo"alt="logo">
+                <h1>GRAND RAID</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse nav-link-color" id="navbarNav">
+              <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active text-white">
+                  <a class="nav-link nav-link-color" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-color" href="pages\lassociation.html">Association</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link nav-link-color dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Courses
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="pages\letraildebourbon.html">TBB</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages\letraildebourbon.html">GRR</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages\letraildebourbon.html">MASCA</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="pages\letraildebourbon.html">LZT</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <section class="banniere">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-white banniere-contenu">
+              <h2>
+                Bienvenue dans le grand raid!
+              </h2>
+              <p>
+                Découvrez les courses mythiques
+              </p>
+              <a href='#course-section' type='button' class="btn btn-primary btnCTA">
+              Découvrir 
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Team Start -->
+    <section class="course-section" id="course-section">
+      <div class=" text-center">
+        <p>Nos programmes</p>
+        <h2>Découvrez les 4 courses mythiques</h2>
+      </div>
+      <div class="container">
+        <div class="row text-center course-contenu">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards">
+                <div class="card">
+                    <img src="images/4.webp" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title color-secondaire">TBB</h2>
+                        <p class="card-text">Le trail de BourBon </p>
+                        <a href="pages\letraildebourbon.html" class="btn btn-primary">Parcours</a>
+                        <a href="pages\letraildebourbon.html?top3" class="btn btn-primary">Top 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards">
+                <div class="card">
+                    <img src="images/1.webp" class="card-img-top " alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title color-primaire">GRR</h2>
+                        <p class="card-text">la diagonale des fous</p>
+                        <a href="pages\letraildebourbon.html" class="btn btn-primary">Parcours</a>
+                        <a href="pages\letraildebourbon.html?top3" class="btn btn-primary">Top 3</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards">
+                <div class="card">
+                    <img src="images/2.webp" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title color-quatrieme">MASCA</h2>
+                        <p class="card-text">La Mascareignes</p>
+                        <a href="pages\letraildebourbon.html" class="btn btn-primary">Parcours</a>
+                        <a href="pages\letraildebourbon.html?top3" class="btn btn-primary">Top 3</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards">
+                <div class="card">
+                    <img src="images/3.webp" class="card-img-top" alt="...">
+                    <div class="card-body ">
+                        <h2 class="card-title color-tertiaire">LZT</h2>
+                        <p class="card-text">Le Zombrocal Trail</p>
+                        <a href="pages\letraildebourbon.html" class="btn btn-primary">Parcours</a>
+                        <a href="pages\letraildebourbon.html?top3" class="btn btn-primary">Top 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-center text-white">
+        <div class="container-fluid">
+          <div class="container">
+            <div>
+              <h2>LE GRAND RAID</h2>
+              <h3>Ile de la Réunion</h3>
+              <div>
+                <p>-Site réalisé dans le cadre d'un projet d'examen-</p>
+                <p>DWWM AFPAR</p>
+                <p>mywebjob@outlook.fr</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="copyright">&copy; Tous droits réservés | Design par Christian Marais</p>
+          </div>
+        </div>
+    </footer>
+    <script src="asset\Jquery\jquery.js"></script>
+    <script src="asset\bootstrap-4.6.0-dist\bootstrap-4.6.0-dist\js\bootstrap.bundle.min.js" ></script>
+    <script src="asset\leaflet\leaflet.js"></script>
+    <script type='text/javascript' src='asset\Leaflet.markercluster-0.2\dist\marcluster.js'></script>
+    <script type='text/javascript' src='asset\script.js'></script>
+  </body>
+</html>

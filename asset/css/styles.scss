@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+:root{
+
+    --couleur-primaire : #2A398C;
+    --couleur-secondaire:#EF233C;
+    --couleur-tertiaire:#F2B705;
+    --couleur-quatrieme:#8C6B07;
+    --couleur-cinquieme:#0D0D0D;
+}
+
+.bg{
+    &-primaire{
+        background:var(--couleur-primaire);
+    }
+    &-secondaire{
+        background:var(--couleur-secondaire);
+    }
+    &-tertiaire{
+        background-color:var(--couleur-tertiaire);
+    }
+    &-quatrieme{
+        background:var(--couleur-quatrieme);
+    }
+    &-cinquième{
+        background:var(--couleur-cinquieme);
+    }
+}
+
+
+.color{
+    &-primaire{
+    color:var(--couleur-primaire);
+    }
+    &-secondaire{
+        color:var(--couleur-secondaire);
+    }
+    &-tertiaire{
+        color:var(--couleur-tertiaire);
+    }
+    &-quatrieme{
+        color:var(--couleur-quatrieme);
+    }
+    &-cinquième{
+        color:var(--couleur-cinquieme);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.sticky{
+    position:absolute;
+    z-index:10;
+    width:100%;
+    }
+.banniere{
+    position:relative;
+    background-image:url(../../images/bg.webp);
+    min-height: 100vh;
+    background-size:cover;
+    background-position:center;
+    padding: 250px 0 200px;
+    
+}
+
+#association{
+    position:relative;
+    min-height: 100vh;
+    background-size:cover;
+    background-position:center;
+    padding: 200px 0 0px;
+    
+}
+
+.banniere-contenu{
+    background: rgba(37, 37, 35, 0.563);
+    padding:20px;
+}
+
+
+.btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: var(--couleur-secondaire);
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px var(--couleur-secondaire);
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.btn:hover {
+    color: var(--couleur-secondaire);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 var(--couleur-secondaire);
+    border-color: var(--couleur-secondaire);
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    z-index: 10;
+    padding:20px 0;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    
+}
+
+.navbar-brand h1{
+    background: -webkit-linear-gradient(-80deg, var(--couleur-secondaire) 0%, var(--couleur-primaire) 51%, var(--couleur-tertiaire) 80%, var(--couleur-cinquieme) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand h1{
+        font-size: calc(7px + 4.3vw);
+    }
+}
+#header-page-association{
+    position:fixed;
+    z-index:100000;
+    width:100%;
+    top:0px;
+    background:white;
+}
+.navbar-brand{
+    display:flex;
+}
+
+.navbar-brand img {
+    display:inline-block;
+    max-width: 100%;
+    max-height: 40px;
+    margin:0px 15px;
+}
+
+#navbarNav.nav-link-color > ul > li > a{
+    color:white !important;
+}
+#navbarNav > ul > li:nth-child(1) > a:hover{
+    color:var(--couleur-secondaire);
+    border-bottom:solid var(--couleur-secondaire)
+}
+#navbarNav > ul > li:nth-child(2) > a:hover{
+    color:var(--couleur-primaire);
+    border-bottom:solid var(--couleur-primaire);
+}
+#navbarNav > ul > li:nth-child(3) > a:hover{
+    color:var(--couleur-tertiaire) ;
+    border-bottom:solid var(--couleur-tertiaire);
+}
+.logo{
+    display:inline-block;
+}
+
+.cards .card{
+    border:unset !important;
+    
+    
+}
+.cards{
+    padding:15px;
+    min-width:calc(300px + 3.3vw);
+    max-height:calc(470px + 3.3vw);
+    filter: drop-shadow(30px 10px 4px #4a4a5350);
+    margin-bottom:50px;   
+}
+
+.card-body{
+    border:rgba(66, 54, 54, 0.164) 1px solid;
+}
+
+.course-section{
+    margin-top:20px;
+}
+
+.card-img-top{
+    min-height: calc(200px + 3.3vw);
+    object-fit: cover;
+}
+
+.cards h2,section h2{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .cards h2{   
+        font-size: calc(4px + 4.3vw);
+    }
+}
+
+
+.btn{
+    margin:5px;
+}
+
+.course-contenu{
+    display:flex;
+    justify-content:space-around;
+    
+}
+section{
+   margin: 0px 0px 25px 0px; 
+}
+section h2{
+    margin-bottom:50px;
+}
+
+footer {
+    position: relative;
+    margin-top: 45px;
+    background: #EF233C;
+}
+
+.footer .container-fluid {
+    padding: 60px 0 0 0;
+}
+.copyright{
+    margin-bottom:0px;
+    padding-bottom:30px;
+}
+.sticky-navbar{
+    position:fixed;
+    background-color:white;
+    color:black;
+}
+
+
+/*******************************/
+/********** association CSS **********/
+/*******************************/
+.association {
+    position: relative;
+    width: 100%;
+    margin: -45px 0 45px 0;
+}
+
+.association .col-lg-6 {
+    padding: 0;
+}
+
+.association .section-header {
+    margin-bottom: 30px;
+}
+
+.association .association-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding:0;
+}
+
+@media screen and (min-width: 992px) {
+.association .association-img img {
+    position: relative;
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    padding:0;
+}
+
+.association .association-img {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+
+.association .association-contenu {
+    padding: 0 90px;
+    background:white;
+    padding-left:-45px;
+    border:solid grey 1px;
+}
+
+.association .association-text p {
+    font-size: 16px;
+    margin-top:30px;
+}
+}
+@media (max-width: 991.98px) {
+    .association .association-contenu {
+        padding: 45px 15px 0 15px;
+       
+    }
+}
+
+.alert{
+    margin-top:20px;
+ }
+ 
+ .profil-pic{
+     height:50px;
+     width:50px;
+     border-radius:50%;
+ 
+ }
+
+ .map-contenu{
+   padding:10px 10px 0px -40px;
+   border:solid 1px grey;
+ }
+#maCarte{
+    order:2;
+    margin-top:70px;
+    padding-top:20px;
+}
+#titre{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding-top:20px;
+}
